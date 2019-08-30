@@ -12,4 +12,10 @@ public class CipherTest {
        Cipher testCipher = new Cipher("text",0);
        assertEquals(0,testCipher.getShift());
     }
+
+    @Test
+    public void shiftValue_between0and26_String(){
+        Cipher testCipher = new Cipher("text",2);
+        assertEquals(true,testCipher instanceof Cipher);
+    }
 }

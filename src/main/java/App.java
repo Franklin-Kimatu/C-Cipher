@@ -5,9 +5,12 @@ public class App {
         Console myConsole = System.console();
         System.out.println("Welcome to the C-Cipher:");
         System.out.println("Enter your plaintext:");
-        String plainText0 = myConsole.readLine();
+        String plainText = myConsole.readLine();
         System.out.println("Enter the shift value");
         String stringShift = myConsole.readLine();
         int intShift = Integer.parseInt(stringShift);
+        Cipher cipher= new Cipher(plainText,intShift);
+        String endCipher= cipher.getCipherText();
+        System.out.println("The cipher text is :"+endCipher);
     }
 }

@@ -19,7 +19,7 @@ public class App {
         }
 
         String cipherText=endCipher;
-        int shift =this.shift;
+
         DeCipher decipher = new DeCipher(cipherText,shift);
         String endDeCipherText = decipher.getDeCiphertext();
         System.out.println(endDeCipherText);

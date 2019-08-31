@@ -9,8 +9,8 @@ public class CipherTest {
 
     @Test
     public void doCipher_getShift_number(){
-       Cipher testCipher = new Cipher("text",1);
-       assertEquals(1,testCipher.getShift());
+       Cipher testCipher = new Cipher("text",2);
+       assertEquals(2,testCipher.getShift());
     }
 
     @Test
@@ -21,8 +21,8 @@ public class CipherTest {
 
     @Test
     public void doCipher_errorMessage_String(){
-        Cipher testCipher = new Cipher("text",1);
-        assertEquals(" ",testCipher.getErrorM());
+        Cipher testCipher = new Cipher("text",50);
+        assertEquals("Enter a shiftKey between 1 and 26",testCipher.getErrorM());
     }
     public void doCipher_getCipherText_String(){
         Cipher testCipher = new Cipher("text",1);

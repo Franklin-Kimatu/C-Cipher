@@ -17,5 +17,11 @@ public class App {
 
             System.out.println("The cipher text is :" + endCipher);
         }
+
+        String cipherText=endCipher;
+        int shift =this.shift;
+        DeCipher decipher = new DeCipher(cipherText,shift);
+        String endDeCipherText = decipher.getDeCiphertext();
+        System.out.println(endDeCipherText);
     }
 }

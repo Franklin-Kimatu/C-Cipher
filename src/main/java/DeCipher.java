@@ -5,7 +5,7 @@ public class DeCipher {
     private String cipherText =" ";
     public DeCipher(String cipherText,int  shift){
         this.shift=shift;
-        if(shift < 1 && shift > 26){
+        if(shift < 1 || shift > 26){
             errorMe ="Enter a shiftKey between 1 and 26";
         }else{
             int length = cipherText.length();
@@ -17,7 +17,8 @@ public class DeCipher {
         }
 
     }
-    public int getShift(){
+    public int getShift()
+    {
         return this.shift;
     }
     public String getErrorM(){

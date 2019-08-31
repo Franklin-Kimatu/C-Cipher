@@ -17,13 +17,7 @@ public class DeCipher {
         }
 
     }
-    public int getShift()
-    {
-        return this.shift;
-    }
-    public String getErrorM(){
-        return errorMe;
-    }
+
     public String getDeCiphertext(){
         return deCiphertext;
     }

@@ -22,6 +22,6 @@ public class App {
 
         DeCipher decipher = new DeCipher(cipherText,shift);
         String endDeCipherText = decipher.getDeCiphertext();
-        System.out.println(endDeCipherText);
+        System.out.println( " The shift key is "+shift+"\n"+"The decipher text is " + endDeCipherText );
     }
 }

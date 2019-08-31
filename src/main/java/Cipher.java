@@ -5,8 +5,8 @@ public class Cipher {
     private int shift;
     private String cipherText =" ";
     public Cipher(String text,int  shift){
-        this.shift=shift;
-        if(shift < 1 && shift > 26){
+         this.shift=shift;
+        if(shift < 1 || shift > 26){
             errorMe ="Enter a shiftKey between 1 and 26";
         }else{
             int length = text.length();

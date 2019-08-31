@@ -5,12 +5,17 @@ public class App {
         Console myConsole = System.console();
         System.out.println("Welcome to the C-Cipher:");
         System.out.println("Enter your plaintext:");
-        String plainText = myConsole.readLine();
+        String text = myConsole.readLine();
         System.out.println("Enter the shift value");
         String stringShift = myConsole.readLine();
-        int intShift = Integer.parseInt(stringShift);
-        Cipher cipher= new Cipher(plainText,intShift);
-        String endCipher= cipher.getCipherText();
-        System.out.println("The cipher text is :"+endCipher);
+        int shift = Integer.parseInt(stringShift);
+        Cipher cipher = new Cipher(text, shift);
+        String endCipher = cipher.getCipherText();
+        if (shift < 1 || shift > 26) {
+            System.out.println("Enter a shiftKey between 1 and 26");
+        } else {
+
+            System.out.println("The cipher text is :" + endCipher);
+        }
     }
 }

@@ -16,6 +16,6 @@ The text will automatically be decrypted upon running the program.
 
 ## Known bugs
 * The program encryptes the space between texts to a special character.ie. &,*,#,%,",'.
-* The decrypted text has a 'null' value as a prefix.
+
 
 

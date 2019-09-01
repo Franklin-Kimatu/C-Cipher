@@ -16,6 +16,7 @@ The text will automatically be decrypted upon running the program.
 
 ## Known bugs
 * The program encryptes the space between texts to a special character.ie. &,*,#,%,",'.
+* The decryption of a shift of 5 returns a decipher text of a value that omit the first character.
 
 
 

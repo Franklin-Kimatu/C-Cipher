@@ -28,6 +28,12 @@ public class CipherTest {
     @Test
     public void doCipher_getCipherText_String(){
         Cipher testCipher = new Cipher("text",1);
-        assertEquals(" ufyu",testCipher.getCipherText());
+        assertEquals("ufyu",testCipher.getCipherText());
+    }
+    // testing the decipher output test
+    @Test
+    public void doDecipher_checkDeciphertext_String(){
+        DeCipher deCipher = new DeCipher("ufyu",1);
+        assertEquals("text",deCipher.getDeCiphertext());
     }
 }

@@ -24,8 +24,10 @@ public class CipherTest {
         Cipher testCipher = new Cipher("text",50);
         assertEquals("Enter a shiftKey between 1 and 26",testCipher.getErrorM());
     }
+
+    @Test
     public void doCipher_getCipherText_String(){
         Cipher testCipher = new Cipher("text",1);
-        assertEquals("ufyt",testCipher.getCipherText());
+        assertEquals(" ufyu",testCipher.getCipherText());
     }
 }

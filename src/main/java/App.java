@@ -22,6 +22,7 @@ public class App {
 
         DeCipher decipher = new DeCipher(cipherText,shift);
         String endDeCipherText = decipher.getDeCiphertext();
-        System.out.println( " The shift key is "+shift+"\n"+"The decipher text is :" + endDeCipherText );
+        System.out.println("The shift key is "+shift+"\n"+"_________________________\n"+"The decipher text is :" + endDeCipherText +"\nThank you.");
+        System.out.println("_________________________\n Run the program again to encypt and decrypt a text.");
     }
 }

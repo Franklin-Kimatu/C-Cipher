@@ -18,7 +18,8 @@ public class DeCipher {
 
     }
 
-    public String getDeCiphertext(){
+    public String getDeCiphertext()
+    {
         return deCiphertext;
     }
 

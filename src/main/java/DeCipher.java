@@ -1,5 +1,5 @@
 public class DeCipher {
-    private String deCiphertext;
+    private String deCiphertext = "";
     private String errorMe =" ";
     private int shift;
     private String cipherText =" ";

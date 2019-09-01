@@ -2,7 +2,7 @@ public class DeCipher {
     private String deCiphertext =" ";
     private String errorMe =" ";
     private int shift;
-    private String cipherText =" ";
+    private String cipherText;
     public DeCipher(String cipherText,int  shift){
         this.shift=shift;
         if(shift < 1 || shift > 26){
@@ -12,7 +12,7 @@ public class DeCipher {
             for (int i =0; i<length; i++){
                 char character = cipherText.charAt(i);
                 char shifted = (char)(character - shift);
-                deCiphertext= deCiphertext + shifted;
+                deCiphertext=deCiphertext + shifted;
             }
         }
 

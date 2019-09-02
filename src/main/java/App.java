@@ -1,13 +1,15 @@
-import  java.io.Console;
+import  java.io.*;
+import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
-        Console myConsole = System.console();
+    public static void main(String[] args) throws Exception{
+//        Console myConsole = System.console();
+        Scanner myConsole = new Scanner(System.in);
         System.out.println("Welcome to the C-Cipher:");
         System.out.println("Enter your plaintext:");
-        String text = myConsole.readLine();
+        String text = myConsole.nextLine();
         System.out.println("Enter the shift value");
-        String stringShift = myConsole.readLine();
+        String stringShift = myConsole.nextLine();
         int shift = Integer.parseInt(stringShift);
         Cipher cipher = new Cipher(text, shift);
         String endCipher = cipher.getCipherText();

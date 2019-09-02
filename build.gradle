@@ -1,7 +1,8 @@
 plugins {
     id 'java'
+    id 'application'
 }
-
+mainClassName = "App"
 group 'com,moringa.studenttracker'
 version '1.0-SNAPSHOT'
 

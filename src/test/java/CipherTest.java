@@ -30,7 +30,7 @@ public class CipherTest {
         Cipher testCipher = new Cipher("text",1);
         assertEquals(" ufyu",testCipher.getCipherText());
     }
-    // testing the decipher output test
+    // testing the decipher output text
     @Test
     public void doDecipher_checkDeciphertext_String(){
         DeCipher deCipher = new DeCipher("ufyu",1);

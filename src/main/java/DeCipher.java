@@ -12,7 +12,12 @@ public class DeCipher {
             for (int i =0; i<length; i++){
                 char character = cipherText.charAt(i);
                 char shifted = (char)(character - shift);
-                deCiphertext=deCiphertext + shifted;
+                if( shifted < 'a'){
+                    deCiphertext += (char)( character +(26 - shift));
+                }else{
+                    deCiphertext=deCiphertext + shifted;
+                }
+
             }
         }
 
